@@ -1,0 +1,94 @@
+a {  
+  text-decoration: none;
+}
+
+
+h1 {  
+  font-family: Staatliches;
+  font-size: 100px;
+  color: #161C1F;
+}
+
+h2 {  
+  font-family: Staatliches;
+  font-size: 80px;
+  color: #161C1F;
+}
+h3 {  
+  font-family: Staatliches;
+  font-size: 60px;
+  color: #161C1F;
+}
+
+#category {
+  font-family: Staatliches;
+  font-weight: 500;
+  background-color: #1A83AE;
+}
+
+#home-background {
+    background-color: #1A83AE;
+
+}
+.uk-text-large {
+  letter-spacing: 0.4px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.13636;
+}
+
+#banner {
+  margin: 20px;
+  height: 800px;
+}
+
+#editor {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+#top{
+  float: right;
+}
+#top-icon :hover{
+  color: #1A83AE
+}
+
+
+.uk-navbar-container {
+  background: #161c1f !important;
+  font-family: Staatliches;
+}
+.uk-nav>li>a:hover, .uk-button-text {
+  color: #D9D4CE;
+}
+.uk-nav>li>a:active {
+  color: #65B3C5;
+}
+
+img:hover {  
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#cv-button {
+    background-color: #1A83AE;
+    text-decoration: none;
+}
+svg:hover {
+    color: #1A83AE;
+
+}
+
+p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p  a:hover {
+    color: #65B3C5;
+
+}
+#project-title {
+  color: #161C1F;
+}
