@@ -13,16 +13,16 @@
       </div> 
     </div>
    <div v-else>
-     <div
-      v-if="project.image"
-      id="banner"
-      class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-align-center uk-width-auto uk-background-contain uk-light uk-padding"
-      :data-src="project.image.url"
-      uk-img
-    >
-     </div>
-      <h1 id="project-title" class="title">{{ project.title }}</h1>
-    </div>
+      <div
+        v-if="project.image"
+        id="banner"
+        class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-align-center uk-width-auto uk-background-contain uk-light uk-padding"
+        :data-src="project.image.url"
+        uk-img
+      >
+        <h1 id="project-title" class="title">{{ project.title }}</h1>
+      </div>
+   </div>
     <div class="uk-section">
       <div class="uk-container uk-container-small">
         <div class="uk-margin">

@@ -20,7 +20,7 @@
         :data-src="article.image.url"
         uk-img
       >
-        <h1 id="article-title ">{{ article.title }}</h1>
+        <h1 id="article-title">{{ article.title }}</h1>
       </div>
     </div>
     <div class="uk-section">
