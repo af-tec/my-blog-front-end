@@ -56,7 +56,7 @@ h3 {
 }
 
 
-.uk-navbar-container {
+.uk-navbar-container, .uk-offcanvas-bar {
   background: #161c1f !important;
   font-family: Staatliches;
 }
@@ -89,6 +89,10 @@ p  a:hover {
     color: #65B3C5;
 
 }
-#project-title {
+#project-title, #article-title {
   color: #161C1F;
+}
+.dropdown-menu-item {
+  font-family: Staatliches;
+
 }

@@ -22,23 +22,38 @@
               </p>
             </div>
             <h3 class="uk-align-center uk-text-center"> Favourite Technologies </h3>
-            <div class="uk-grid-xsmall uk-child-width-1-6@m uk-child-width-1-3@s" uk-grid>
+            <div uk-slider v-if="isMobile()">
+            <ul class="uk-slider-items uk-child-width-1-1">
+                <div v-for="tech in technologies"
+                :key="tech.name">
+                  <li>
+                    <div class="uk-card-default">
+                      <div class="uk-card-media-top uk-cover-container uk-text-center uk-align-center">
+                        <img  :src="getImgUrl(tech.img)" width="100" height="100" alt="">
+                      </div>
+                      <div class="uk-text-large uk-text-center uk-margin-top"> {{tech.name}} </div>
+                    </div>
+                  </li>
+                </div>
+            </ul>
+            </div>
+            <div v-else class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@xs" uk-grid>
               <div v-for="tech in technologies"
               :key="tech.name">
-                <div class="uk-card" >
-                  <div class="uk-card-media-top uk-cover-container ">
-                    <img  :src="getImgUrl(tech.img)" class="uk-width-collapse" alt="">
+                <div class="uk-card-default">
+                  <div class="uk-card-media-top uk-cover-container uk-text-center uk-align-center">
+                    <img  :src="getImgUrl(tech.img)" width="100" height="100" alt="">
                   </div>
-                  <div class="uk-card-title uk-text-center uk-margin-top"> {{tech.name}} </div>
+                  <div class="uk-text-large uk-text-center uk-margin-top"> {{tech.name}} </div>
                 </div>
               </div>
             </div>
         </div>
       </div>
-    </div>
-  
+  </div>
 </template>
 <script>
+import isMobile from '../mixins/isMobile';
 
 export default {
   name: "Home",
@@ -72,6 +87,7 @@ export default {
       ]
     }
   },
+  mixins: [isMobile],
   methods: {
     getImgUrl(pic) {
       if (pic === undefined) {

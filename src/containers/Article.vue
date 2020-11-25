@@ -1,16 +1,28 @@
 <template>
   <div>
-
-    <div
-      v-if="article.image"
-      id="banner"
-      class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-      :data-src="article.image.url"
-      uk-img
-    >
-      <h1>{{ article.title }}</h1>
+    <div v-if="isMobile()">
+      <div class="uk-margin-top">
+          <h1 class="article-title uk-align-center uk-text-center">{{ article.title }}</h1>
+        <div
+          class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-align-center uk-width-auto uk-background-contain uk-light uk-padding"
+          v-if="article.image"
+          :data-src="article.image.url"
+          uk-img
+        >
+        </div>
+      </div> 
     </div>
-
+    <div v-else>
+      <div
+        v-if="article.image"
+        id="banner"
+        class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        :data-src="article.image.url"
+        uk-img
+      >
+        <h1 id="article-title ">{{ article.title }}</h1>
+      </div>
+    </div>
     <div class="uk-section">
 
       <div class="uk-container uk-container-small">
@@ -41,6 +53,7 @@
 
 <script>
 var moment = require("moment");
+import isMobile from '../mixins/isMobile';
 import VueMarkdownIt from "vue-markdown-it";
 import gql from "graphql-tag";
 export default {
@@ -52,6 +65,7 @@ export default {
       routeParam: this.$route.params.id
     };
   },
+  mixins: [isMobile],
   components: {
     VueMarkdownIt
   },
