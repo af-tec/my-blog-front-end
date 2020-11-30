@@ -10,7 +10,7 @@
 
             <p> 
                 Feel free to send me a message about anything using the form below!
-                You can also reach me on my LinkedIn, Twitter or directly by emailing me at <a href="mailto:contact@alex-peebles.tech"> contact@alex-peebles.tech</a>.
+                You can also reach me on my LinkedIn or directly by emailing me at <a href="mailto:contact@alex-peebles.tech"> contact@alex-peebles.tech</a>.
                 I will endevour to get back to you as soon as possible. Feel free to find me on the platforms listed below too!
 
             </p>
