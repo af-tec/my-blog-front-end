@@ -1,42 +1,28 @@
 <template>
   <div>
-    <div v-if="isMobile()">
-      <div class="uk-margin-top">
-          <h1 class="article-title uk-align-center uk-text-center">{{ article.title }}</h1>
-        <div
-          class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-align-center uk-width-auto uk-background-contain uk-light uk-padding"
-          v-if="article.image"
-          :data-src="article.image.url"
-          uk-img
-        >
-        </div>
-      </div> 
-    </div>
-    <div v-else>
+    <div>
       <div
         v-if="article.image"
         id="banner"
-        class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        class="uk-background-cover"
         :data-src="article.image.url"
         uk-img
       >
-        <h1 id="article-title">{{ article.title }}</h1>
+
       </div>
     </div>
     <div class="uk-section">
-
       <div class="uk-container uk-container-small">
-        <div class="uk-margin">
-          <span class="uk-label"
-                id="category"
-                v-if="article.category"
-            >
-                {{ article.category.name }}
-            </span>
-          <span id="published-date" class="uk-text-meta" v-if="article.published_at">
-              {{ moment(article.published_at).format("Do MMMM YYYY") }}
-          </span>
-        </div>
+        <h2 class="article-title">{{ article.title }}</h2>
+        <div class="uk-margin-small-bottom">
+          <h4
+            v-if="article.category"
+          >
+              {{ article.category.name }}
+          </h4>
+          <h5> {{ moment(article.published_at).format("Do MMMM YYYY") }} </h5>
+
+          </div>
         <vue-markdown-it
           v-if="article.content"
           :source="article.content"

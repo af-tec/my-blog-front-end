@@ -46,6 +46,7 @@ export default {
           category {
             name
           }
+          description
           published_at
         }
       }

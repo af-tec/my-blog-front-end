@@ -44,7 +44,9 @@
                   <div class="uk-card-media-top uk-cover-container uk-text-center uk-align-center">
                     <img  :src="getImgUrl(tech.img)" width="100" height="100" alt="">
                   </div>
-                  <div class="uk-text-large uk-text-center uk-margin-top"> {{tech.name}} </div>
+                  <div class="uk-card-footer">
+                    <div class="uk-text-large uk-text-center"> {{tech.name}} </div>
+                  </div>
                 </div>
               </div>
             </div>

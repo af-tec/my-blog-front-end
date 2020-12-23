@@ -3,23 +3,31 @@ a {
 }
 
 
-h1 {  
+h1, h2, h3, h4, h5, h6 {  
   font-family: Staatliches;
-  font-size: 100px;
   color: #161C1F;
 }
 
+h1 {
+  font-size: 100px;
+
+}
 h2 {  
-  font-family: Staatliches;
+  margin: 0px;
   font-size: 80px;
-  color: #161C1F;
 }
 h3 {  
-  font-family: Staatliches;
   font-size: 60px;
-  color: #161C1F;
 }
 
+h4 {  
+  margin: 0px;
+  font-size: 40px;
+}
+h5 {  
+  margin: 0px;
+  font-size: 20px;
+}
 #category {
   font-family: Staatliches;
   font-weight: 500;
@@ -38,8 +46,8 @@ h3 {
 }
 
 #banner {
-  margin: 20px;
-  height: 800px;
+  margin: auto;
+  height: 500px;
 }
 
 #editor {
@@ -89,7 +97,7 @@ p  a:hover {
     color: #65B3C5;
 
 }
-#project-title, #article-title {
+.project-title, .article-title {
   color: #161C1F;
 }
 .dropdown-menu-item {

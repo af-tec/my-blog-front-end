@@ -55,14 +55,6 @@
 import isMobile from '../mixins/isMobile'
 export default {
     name: 'Nav',
-    mixins: [isMobile],
-    data() {
-        return {
-        menu: false
-        }
-    },
-
-
-    
+    mixins: [isMobile],    
 }
 </script>

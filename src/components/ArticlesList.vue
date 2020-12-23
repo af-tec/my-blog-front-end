@@ -10,17 +10,18 @@
                     <div class="uk-card-media-left uk-cover-container">
                         <img :src="article.image.url" class="uk-width-*" alt=""/>
                     </div>
-                    <div class="uk-card-body">
+                    <div class="uk-card-body uk-text-center uk-align-center">
                         <div class="uk-card-badge uk-label"
                             id="category"
                             v-if="article.category"
                         >
                             {{ article.category.name }}
                         </div>
-                        <div class="uk-text-large"> <h3> {{ article.title }}  </h3> </div>
-                        <div class="uk-align-center">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
+                        <div class="uk-text-center uk-align-center"> <h4> {{ article.title }}  </h4> 
+                         </div>
+                         <div>
+                            {{ article.description }}
+                         </div>
                     </div>
                 </div>
             </router-link>

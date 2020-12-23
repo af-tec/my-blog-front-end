@@ -37,6 +37,7 @@ export default {
               image {
                 url
               }
+              description
               category {
                 id
                 name
