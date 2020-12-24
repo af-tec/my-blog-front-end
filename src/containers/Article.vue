@@ -57,7 +57,7 @@ export default {
     
       title: `${this.article.title}`,
       meta: [
-        { property: "og:description", content: `${this.article.description}`},
+        { property: "description", content: `${this.article.description}`},
         { property: "og:image", content: `${this.article.image}`}
       ],
     }
