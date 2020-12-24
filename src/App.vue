@@ -18,7 +18,7 @@ export default {
   },
   meta: [
     { charset: 'utf-8' },
-    { name: "og:site_name", content: "Alex Peebles's Blog"},
+    { proeprty: "og:site_name", content: "Alex Peebles's Blog"},
     { name: 'description', content: 'Personal site with projects, blog posts and more!'},
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
 

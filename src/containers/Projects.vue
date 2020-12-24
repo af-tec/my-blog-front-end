@@ -26,7 +26,7 @@ export default {
     return {
       title: `${this.project.title}`,
       meta: [
-        { name: "og:image", content: `${this.project.image}`}
+        { property: "og:image", content: `${this.project.image}`}
       ],
     }
   },
