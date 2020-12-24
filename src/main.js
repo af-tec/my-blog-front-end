@@ -4,12 +4,14 @@ import Vue from 'vue'
 import VueApollo from "vue-apollo";
 import apolloClient from "./vue-apollo";
 import VueRouter from "vue-router";
+import VueMeta from "vue-meta";
 import App from './App.vue'
 
 Vue.config.productionTip = false
 
 Vue.use(VueApollo);
 Vue.use(VueRouter);
+Vue.use(VueMeta);
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient
 })

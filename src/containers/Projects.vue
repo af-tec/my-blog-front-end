@@ -22,6 +22,14 @@ export default {
       projects: []
     };
   },
+    metaInfo() {
+    return {
+      title: `${this.project.title}`,
+      meta: [
+        { name: "og:image", content: `${this.project.image}`}
+      ],
+    }
+  },
   apollo: {
     projects: gql`
       query Projects {

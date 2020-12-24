@@ -51,6 +51,17 @@ export default {
       routeParam: this.$route.params.id
     };
   },
+  metaInfo() {
+    return {
+
+    
+      title: `${this.article.title}`,
+      meta: [
+        { name: "og:description", content: `${this.article.description}`},
+        { name: "og:image", content: `${this.article.image}`}
+      ],
+    }
+  },
   mixins: [isMobile],
   components: {
     VueMarkdownIt
@@ -70,6 +81,7 @@ export default {
               id
               name
             }
+            description
             published_at
           }
         }
