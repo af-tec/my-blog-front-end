@@ -16,7 +16,7 @@
     "fibers": "^5.0.0",
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "sass": "^1.29.0",
     "sass-loader": "^10.0.5",
     "uikit": "^3.5.9",
